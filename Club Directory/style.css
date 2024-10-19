@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0b0c10;
+}
+
+.slide-container {
+  max-width: 1520px;
+  width: 100%;
+  padding: 40px;
+}
+
+.name {
+  color: #66fcf1;
+  font-size: 40px;
+  font-weight: 500; 
+  text-align: center;
+}
+
+.description {
+  font-size: 20px;
+  color: #c5c6c7;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.slide-content {
+  margin: 0 40px;
+}
+.card {
+  height: auto;
+  border-radius: 25px;
+  background-color: #1f2833;
+}
+
+.image-content , .card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 14px;
+}
+
+.image-content {
+  row-gap: 5px;
+  position: relative;
+  padding: 25px ;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 25px 25px 0 0;
+
+}
+.card-image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  background-color: #45a29e;
+  border-radius: 74px;
+  padding: 3px;
+}
+
+.card-image .card-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 74px;
+  border: 4px solid #45a29e;
+}
+
+.button {
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  color: white;
+  padding: 8px 16px;
+  background-color: #0b0c10 ;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+}
+
+.popup-box {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0,0,0,0.7);
+  /* display: none; */
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.popup-box .popup-content {
+  background-color: #c5c6c7;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 600px;
+  width: 90%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.popup-box .popup-header {
+  text-align: center;
+  text-decoration: underline;
+  padding: 15px;
+  border-bottom: 3px solid black;
+}
+
+
+.slide-content {
+  margin: 0 40px;
+}
+.card {
+  height: auto;
+  border-radius: 25px;
+  background-color: #1f2833;
+}
+
+.image-content , .card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 14px;
+}
+
+.image-content {
+  row-gap: 5px;
+  position: relative;
+  padding: 25px ;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 25px 25px 0 0;
+
+}
+.card-image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  background-color: #45a29e;
+  border-radius: 74px;
+  padding: 3px;
+}
+
+.card-image .card-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 74px;
+  border: 4px solid #45a29e;
+}
+
+.button {
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  color: white;
+  padding: 8px 16px;
+  background-color: #0b0c10 ;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+}
+
+.popup-box {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.7);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.popup-box .popup-content {
+  background-color: #c5c6c7;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 600px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.popup-box .popup-header {
+  font-size: 20px;
+  text-align:center;
+  text-decoration: underline;
+  padding: 15px;
+  border-bottom: #c5c6c7;
+}
+
+.popup-image {
+  width: 520px; /* Make the image responsive */
+  height: 250px; /* Maintain aspect ratio */
+  border-radius: 10px; /* Add a slight border radius */
+  margin-top: 20px; /* Add space above the image */
+  margin-right: 10%;
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+.popup-box .popup-body {
+  display: flex; /* Use flexbox for alignment */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  padding: 15px;
+  height: 100%;
+}
+
+.popup-box .popup-body p {
+  margin: 0;
+  width: 100%;
+  text-align:justify;
+}
+
+.popup-box .popup-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+}
+
+.popup-close-btn {
+  text-align: center;
+  background-color: #0b0c10; /* Button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.popup-close-btn:hover {
+  background-color: white; /* Change on hover */
+  color: black;
+}
