@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://i.pinimg.com/736x/c6/c2/e9/c6c2e9022f25f404fe108a4cfefab222.jpg" type="image/png">
+    <title>NewsVITa - VIT's Latest, Delivered Daily</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #0c4b85;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 60px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            animation: fadeInDown 1.5s ease-out;
+        }
+
+        header p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 15px;
+            background-color: #ffc107;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: #0c4b85;
+            font-size: 16px;
+            font-weight: 600;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 25px;
+            background-color: white;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #0c4b85;
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        .hero {
+            background-size: cover;
+            background-position: center;
+            padding: 100px 20px;
+            color: white;
+            text-align: center;
+            box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+            animation: PiyushAnimate 20s infinite cubic-bezier(0.7, 0, 0.3, 1);
+        }
+
+        @keyframes PiyushAnimate {
+            0% {
+                background-image: url('https://vitbhopal.ac.in/icdcc2024/images/VITB-Background.jpeg');
+            }
+
+            25% {
+                background-image: url('https://vitbhopal.ac.in/wp-content/uploads/2020/02/Brochure-Front-Cover-Image11.jpg');
+            }
+
+            50% {
+                background-image: url('https://icsdp.com/img/photo/2nd.jpg');
+            }
+
+            75% {
+                background-image: url('https://vitbhopal.ac.in/wp-content/uploads/2023/05/DSW1-scaled.jpg');
+            }
+
+            100% {
+                background-image: url('https://images.shiksha.com/mediadata/images/1709805273phpdO15C2.jpeg');
+            }
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 22px;
+            margin-bottom: 40px;
+        }
+
+        .hero button {
+            background-color: #ffc107;
+            color: #0c4b85;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            /* transition: background-color 0.3s ease, transform 0.3s ease; */
+        }
+
+        .hero button:hover {
+            background-color: #0c4b85;
+            color: white;
+            transform: translateY(-5px);
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .section:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        .section h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: #0c4b85;
+        }
+
+        .section p {
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        footer {
+            background-color: #0c4b85;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h2 {
+                font-size: 36px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>NewsVITa</h1>
+        <p>Your Trusted Source for Campus News & Beyond</p>
+    </header>
+
+    <nav>
+        <a href="#upcoming-events">Upcoming Events</a>
+        <a href="#past-events clicks">Past Events Clicks</a>
+        <a href="#club-vacancy">Club Vacancy</a>
+        <a href="#club directory">Club Directory</a>
+    </nav>
+
+    <section class="hero">
+        <h2>Welcome to VIT's Premier News Portal</h2>
+        <p>Stay informed about what's happening on and around the VIT campus</p>
+        <a href="https://vitbhopal.ac.in/" target="_blank">
+            <button>Explore More</button>
+        </a>
+
+    </section>
+
+    <div class="container">
+        <section id="upcoming-events" class="section">
+            <h2>Upcoming Events</h2>
+            <p>Get the latest updates on events, seminars, and happenings across the VIT campus. Stay ahead with our
+                real-time news updates.</p>
+        </section>
+
+        <section id="past-events clicks" class="section">
+            <h2>Past Events Clicks</h2>
+            <p>Relive the memorable moments from past events. Discover how VIT has been shaping education and innovation
+                over the years.</p>
+        </section>
+
+        <section id="club-vacancy" class="section">
+            <h2>Club Vacancy</h2>
+            <p>Join one of our dynamic clubs. Explore the available roles and opportunities to be a part of the thriving
+                VIT community.</p>
+        </section>
+
+        <section id="club directory" class="section">
+            <h2>Club Directory</h2>
+            <p>Browse through a gallery of exclusive photos and videos from recent events. Immerse yourself in the VIT
+                experience through visual storytelling.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 NewsVITa | All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
